@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">
+      <div id="history"></div>
+      <div id="current"></div>
+    </div>
+    <div class="buttons">
+      <button class="blue" onclick="appendSymbol('(')">(</button>
+      <button class="blue" onclick="appendSymbol(')')">)</button>
+      <button class="blue" onclick="getPreviousResult()">ans</button>
+      <button class="blue" onclick="deleteLast()">del</button>
+      <button  class="blue" onclick="clearDisplay()">clear</button>
+      <button  onclick="appendSymbol('7')">7</button>
+      <button onclick="appendSymbol('8')">8</button>
+      <button onclick="appendSymbol('9')">9</button>
+      <button class="blue" onclick="appendSymbol('%')">%</button>
+      <button class="blue" onclick="appendSymbol('Math.sqrt(')">√</button>
+      <button onclick="appendSymbol('4')">4</button>
+      <button onclick="appendSymbol('5')">5</button>
+      <button onclick="appendSymbol('6')">6</button>
+      <button class="blue" onclick="appendSymbol('*')">x</button>
+      <button class="blue" onclick="appendSymbol('/')">÷</button>
+      <button onclick="appendSymbol('1')">1</button>
+      <button onclick="appendSymbol('2')">2</button>
+      <button onclick="appendSymbol('3')">3</button>
+      <button class="blue" onclick="appendSymbol('+')">+</button>
+      <button class="blue" onclick="appendSymbol('-')">−</button>
+      <button onclick="appendSymbol('0')">0</button>
+      <button class="blue" onclick="appendSymbol('.')">.</button>
+      <button class="enter" onclick="calculate()">ENTER</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
