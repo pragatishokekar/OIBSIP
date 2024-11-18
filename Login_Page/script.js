@@ -1,4 +1,3 @@
-// Mock credentials
 const validEmail = "test@example.com";
 const validPassword = "password123";
 
@@ -16,4 +15,3 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
         error.textContent = "Invalid email or password.";
     }
 });
-// window.location.href = `dashboard.html?email=${encodeURIComponent(email)}`;
